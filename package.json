@@ -1,0 +1,37 @@
+{
+  "name": "dsh-file-attach",
+  "version": "0.1.0",
+  "description": "DSH web plugin: attach generic (non-image) files in the composer. Paperclip button + chips rail; files land in <workspace>/.dsh-uploads/<sessionId>/ so the agent's file tools can read them.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./client/client.js"
+  },
+  "files": [
+    "src",
+    "client"
+  ],
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "attachment",
+    "composer"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "license": "MIT"
+}
