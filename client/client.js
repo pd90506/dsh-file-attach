@@ -22,7 +22,7 @@
  * ../src/index.js.
  */
 window.__ModuleLoader__.load({
-  id: 'dsh-file-attach',
+  id: '@pd90506/dsh-file-attach',
   factory: (require) => {
     var module = { exports: {} }
     var exports = module.exports

@@ -27,13 +27,13 @@ All APIs used here are verified against DSH 0.1.0-rc.6 source: cordis `name`/`in
 ```bash
 # 1. Link the package into the profile (mirrors the dsh.profile.bundles link pattern)
 #    add to ~/.dsh/profiles/web/package.json dependencies:
-#      "dsh-file-attach": "link:/path/to/file-attach-plugin"
+#      "@pd90506/dsh-file-attach": "link:/path/to/file-attach-plugin"
 #    then run pnpm install inside the profile directory.
 
 # 2. Append a loader row to ~/.dsh/profiles/web/cordis.patch.yml:
 #    - insert:
 #        - id: file-attach
-#          name: dsh-file-attach
+#          name: '@pd90506/dsh-file-attach'
 #          config: {}
 
 # 3. Restart dsh web — the client plugin graph is composed at startup.

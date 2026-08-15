@@ -1,8 +1,12 @@
 {
-  "name": "dsh-file-attach",
+  "name": "@pd90506/dsh-file-attach",
   "version": "0.1.0",
   "description": "DSH web plugin: attach generic (non-image) files in the composer. Paperclip button + chips rail; files land in <workspace>/.dsh-uploads/<sessionId>/ so the agent's file tools can read them.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pd90506/dsh-file-attach.git"
+  },
   "main": "src/index.js",
   "exports": {
     ".": "./src/index.js",

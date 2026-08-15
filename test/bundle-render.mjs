@@ -33,7 +33,7 @@ window.__ModuleLoader__ = {
 const source = await readFile(new URL('../client/client.js', import.meta.url), 'utf8')
 await import(`data:text/javascript,${encodeURIComponent(source)}`)
 assert.ok(loaded !== null, 'bundle registered with the module loader')
-assert.equal(loaded.id, 'dsh-file-attach')
+assert.equal(loaded.id, '@pd90506/dsh-file-attach')
 
 // ── provide the factory's requires ───────────────────────────────────────────
 const react = require('react')

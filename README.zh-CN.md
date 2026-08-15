@@ -27,13 +27,13 @@ marker 行是单个 token（无与文件名冲突的分隔符），配合 prompt
 ```bash
 # 1. 把插件链接进 profile（与 dsh.profile.bundles 的 link 模式一致）
 #    在 ~/.dsh/profiles/web/package.json 的 dependencies 中添加：
-#      "dsh-file-attach": "link:/path/to/file-attach-plugin"
+#      "@pd90506/dsh-file-attach": "link:/path/to/file-attach-plugin"
 #    然后在 profile 目录里运行 pnpm install。
 
 # 2. 在 ~/.dsh/profiles/web/cordis.patch.yml 末尾追加 loader 行：
 #    - insert:
 #        - id: file-attach
-#          name: dsh-file-attach
+#          name: '@pd90506/dsh-file-attach'
 #          config: {}
 
 # 3. 重启 dsh web——客户端插件图在启动时构建，必须重启。
